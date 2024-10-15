@@ -2,3 +2,7 @@ form {
   background-color: white;
   border-radius: 10px;
 }
+.btn-primary {
+  background-color: rgb(243, 117, 36)!important;
+  border-color:  rgb(243, 117, 36)!important;
+}

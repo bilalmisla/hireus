@@ -1,81 +1,58 @@
-<!-- THIS IS AN EXAMPLE PAGE AND SHOULD NOT BE USED OUTSIDE OF DEVELOPMENT -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Chat Widget | Extensions Demo</title>
-    <style>
-      body {
-        background-color: #f9f9f9;
-      }
-      #flat-chat {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      #confetti-canvas {
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-      }
-    </style>
-  </head>
-  <body>
-    <canvas id="confetti-canvas"></canvas>
-    <div id="flat-chat"></div>
-    <div id="voiceflow-chat-frame"></div>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script type="module">
-      import { VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
-                FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension } from '/extensions.js';
+<html lang="en">
 
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <!-- required meta -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- #favicon -->
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <!-- #title -->
+      <title>We can create anything. Don’t believe us? Let us show you | Made in South LA</title>
+      <link rel="canonical" href="https://hireus.misla.org/" />
+      <!-- #keywords -->
+      <meta name="keywords" content="MISLA, made in south la">
+      <!-- #description -->
+      <meta name="description"
+         content="We aim to build generational wealth in local and disinvested communities worldwide. We are training super tech soldiers with emphasis on entrepreneurialism in">
+      <!-- ==== css dependencies start ==== -->
+      <!-- bootstrap five css -->
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+   </head>
+
+   <body style="background: rgb(254, 234, 222);">
+
+      <div class="container" style="margin-top: 40px;margin-bottom: 40px;">
+         <div>
+            <div id="ff-compose"></div>
+         </div>
+         <script async defer
+            src="https://formfacade.com/include/106979950934002848639/form/1FAIpQLSf8KPwPNiYArYz7bY8qI4Vbf1_STxxcoITc8c0y7QhZeCLVSA/bootstrap.js?div=ff-compose"></script>
+      </div>
+
+
+      <!-- jquery -->
+      <!-- <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script> -->
+      <!-- bootstrap five js -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript">
       (function (d, t) {
-        var v = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        v.onload = function () {
-          window.voiceflow.chat.load({
-            verify: { projectID: '672e1b0fc9691eae495846a5' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'development',
-            user: {
-              name: 'Demo User',
-            },
-            render: {
-              mode: 'overlay',
-            },
-            autostart: false,
-            allowDangerousHTML: true,
-            assistant: {
-              extensions: [
-                VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
-                FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension,
-              ],
-            },
-          });
-        };
-        v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
-        v.type = 'text/javascript';
-        s.parentNode.insertBefore(v, s);
+         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+         v.onload = function () {
+            window.voiceflow.chat.load({
+               verify: { projectID: '67286cc73e9db852592dd6c2' },
+               url: 'https://general-runtime.voiceflow.com',
+               versionID: 'production'
+            });
+         }
+         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
       })(document, 'script');
-    </script>
-  </body>
+   </script>
+   
+   </body>
+
 </html>

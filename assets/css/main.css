@@ -1,8 +1,4 @@
-form {
-  background-color: white;
-  border-radius: 10px;
-}
-.btn-primary {
-  background-color: rgb(243, 117, 36)!important;
-  border-color:  rgb(243, 117, 36)!important;
+@import url('https://fonts.google.com/share?selection.family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900');
+:host {
+    --font-default: "Inter", sans-serif;
 }

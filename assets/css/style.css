@@ -17,6 +17,7 @@ h1 {
   font-style: normal;
   font-size: 40px;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 
@@ -67,7 +68,7 @@ h1 {
 
 
       .heading {
-         width: 900px; margin: 40px auto 0;text-align: center;
+         width: 1090px; margin: 40px auto 0;text-align: center;
       }
 
       @media (max-width:1000px) {

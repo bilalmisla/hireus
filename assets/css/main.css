@@ -15,3 +15,6 @@
 .vfrc-footer--watermark {
   display: none!important;
 }
+.vfrc-button {
+  margin-bottom: 10px!important;
+}

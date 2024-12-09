@@ -7,3 +7,11 @@
 :host{
   --fonts-default: 'Inter', sans-serif;
 }
+
+.vfrc-assistant-info--title {
+      font-weight: 700;
+}
+
+.vfrc-footer--watermark {
+  display: none!important;
+}

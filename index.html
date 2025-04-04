@@ -25,66 +25,48 @@
       <div style="text-align: center;">
          <img src="assets/images/logo.png" width="130px">
       </div>
-      <h1>We can create anything</h1>
+      <h1>What would you like us to create? </h1>
       <p>
    
          Please complete this form to provide all necessary information and assets for your project. Based on the type of
          work (Design, Web Development, Video Editing, or Admin), you will be asked specific questions to help us understand
          your needs and gather the required materials.</p>
       <br>
-   </div>
-    <canvas id="confetti-canvas"></canvas>
-   <div id="flat-chat"></div>
-    <div id="voiceflow-chat-frame"></div>
+  </div>
+  <div id="flat-chat"></div>
     
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script type="module">
-      import { VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
+  <script type="module">
+                              import {
                 FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension } from '/extensions.js';
+                              } from '/extensions.js';
 
       (function (d, t) {
         var v = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
         v.onload = function () {
           window.voiceflow.chat.load({
-            verify: { projectID: '6756fea68757e58072e9af77' },
+            verify: { projectID: '67ef892f209839b229966ca3' },
             url: 'https://general-runtime.voiceflow.com',
-            versionID: 'development',
-            assistant: {
-               stylesheet: "https://hireus.misla.org/assets/css/main.css",
-               overflow: "hidden" //link to your self-hosted stylesheet
-
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
             },
-             render: {
-                mode: 'embedded',
-             },
             autostart: false,
             allowDangerousHTML: true,
             assistant: {
               extensions: [
-                VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
                 FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                ConfettiExtension,
-                FeedbackExtension,
               ],
                stylesheet: "https://hireus.misla.org/assets/css/main.css",
                overflow: "hidden"
             },
+            render: {
+              mode: 'embedded',
+              target: document.getElementById('flat-chat')
+            },
           });
         };
-        v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+        v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
         v.type = 'text/javascript';
         s.parentNode.insertBefore(v, s);
       })(document, 'script');

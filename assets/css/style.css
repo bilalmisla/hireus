@@ -23,10 +23,8 @@ h1 {
 
 #flat-chat {
         /* width: 100vw; */
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
+        margin: auto;
+        width: 600px;
       }
       #confetti-canvas {
         position: fixed;

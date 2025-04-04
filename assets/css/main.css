@@ -12,7 +12,7 @@
       font-weight: 700;
 }
 
-.vfrc-footer--watermark {
+.jsli366 {
   display: none!important;
 }
 .vfrc-button {
@@ -21,4 +21,7 @@
 
 .c-kbCYVp-lbvmyx-withWatermark-true {
     padding-bottom: 12px!important;
+}
+.jsli366 {
+  display: none!important;
 }

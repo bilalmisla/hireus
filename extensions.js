@@ -157,7 +157,7 @@ export const FileUploadExtension = {
   name: 'FileUpload',
   type: 'response',
   match: ({ trace }) =>
-    trace.type === 'ext_fileUpload' || trace.payload.name === 'ext_fileUpload',
+    trace.type === 'ext_fileUpload' || (trace.payload && trace.payload.name === 'ext_fileUpload'),
   render: ({ trace, element }) => {
     const fileUploadContainer = document.createElement('div')
     fileUploadContainer.innerHTML = `
